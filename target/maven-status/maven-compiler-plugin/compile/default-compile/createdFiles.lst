@@ -1,0 +1,3 @@
+com/demos/msg/rabbitmqdemo/receiver/Receiver.class
+com/demos/msg/rabbitmqdemo/runner/Runner.class
+com/demos/msg/rabbitmqdemo/RabbitmqDemoApplication.class
