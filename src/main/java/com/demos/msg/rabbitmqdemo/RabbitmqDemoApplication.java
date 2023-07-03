@@ -21,7 +21,7 @@ import com.demos.msg.rabbitmqdemo.receiver.Receiver;
 @SpringBootApplication
 public class RabbitmqDemoApplication {
 	
-	  private static final String topicExchangeName = "spring-boot-exchange";
+	  private final static String topicExchangeName = "spring-boot-exchange";
 
 	  static final String queueName = "spring-boot";
 
@@ -76,7 +76,9 @@ public class RabbitmqDemoApplication {
 
 	  /*
 	   * The main() method starts that process by creating a 
-	   * Spring application context. This starts the message 
+	   * Spring application context. 
+	   * 
+	   * This starts the message 
 	   * listener container, which starts listening for messages. 
 	   * There is a Runner bean, which is then 
 	   * automatically run. It retrieves the RabbitTemplate 
@@ -90,6 +92,10 @@ public class RabbitmqDemoApplication {
 	}
 
 	public static String getTopicexchangename() {
+		return getTopicExchangeName();
+	}
+
+	public static String getTopicExchangeName() {
 		return topicExchangeName;
 	}
 
